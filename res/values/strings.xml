@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">light</string>
+    <string name="app_name">Light</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="light_on">Light is ON</string>
     <string name="light_off">Light is OFF</string>
+    <string name="image_attribution"><div>Icon made by <a href="http://www.flaticon.com/free-icon/lightbulb_2613" title="Stephen Hutchings">Stephen Hutchings</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a></div></string>
 
 </resources>

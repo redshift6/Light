@@ -83,7 +83,7 @@ public class MainActivity extends Activity {
 			params = camera.getParameters();
 			params.setFlashMode(Parameters.FLASH_MODE_TORCH);
 			camera.setParameters(params);
-			camera.startPreview();
+			//camera.startPreview();
 			flashState = true;
 			//lightButton.setText(getString(R.string.light_on));
             lightButton.setImageDrawable(getResources().getDrawable(R.drawable.ic_light_on));
@@ -91,7 +91,7 @@ public class MainActivity extends Activity {
 			params = camera.getParameters();
 			params.setFlashMode(Parameters.FLASH_MODE_OFF);
 			camera.setParameters(params);
-			camera.stopPreview();
+			//camera.stopPreview();
 			flashState = false;
 			//lightButton.setText(getString(R.string.light_off));
             lightButton.setImageDrawable(getResources().getDrawable(R.drawable.ic_light_off));
@@ -109,11 +109,11 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onPause() {
 	    super.onPause();
-	    flashState = false; 
-	    params = camera.getParameters();
-		params.setFlashMode(Parameters.FLASH_MODE_OFF);
-		camera.setParameters(params);
-		camera.stopPreview();
+        params = camera.getParameters();
+        params.setFlashMode(Parameters.FLASH_MODE_OFF);
+        camera.setParameters(params);
+        flashState = false;
+        lightButton.setImageDrawable(getResources().getDrawable(R.drawable.ic_light_off));
 	}
 	
 	@Override
